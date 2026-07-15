@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#123940" />
+    <title>Julio Iero · Symplemente Ventas — 28·29·30 Julio 2026, Guadalajara</title>
+    <meta
+      name="description"
+      content="Evento Symplemente Ventas con Julio Iero. 28, 29 y 30 de Julio 2026 en Guadalajara. Que loco verte de nuevo."
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/isotipo-1.svg" />
+
+    <!-- precarga de las fuentes críticas (titulares + cuerpo) para acelerar el primer render -->
+    <link rel="preload" href="/assets/brand/symple-fonts-aeoniktrial/AeonikTRIAL-Bold.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/assets/brand/symple-fonts-neutralsans/NeutralSans-Regular-BF673417d506f9f.otf" as="font" type="font/otf" crossorigin />
+  </head>
+  <body>
+    <!-- custom cursor: hand-drawn arrow pointer (flips linen/dark for contrast) -->
+    <div class="cursor" data-cursor aria-hidden="true">
+      <svg class="cursor__arrow" viewBox="0 0 21 29" aria-hidden="true">
+        <path d="M3 2 C3.4 9 3.6 16 4 22.4 C4.1 23.3 5 23.6 5.7 23 L8.8 19.4 C9 19.2 9.3 19.3 9.4 19.6 L11.6 26.8 C11.9 27.7 13 27.5 13 26.6 C13 24.2 11.9 21.4 11.2 19.3 L16.9 18.9 C17.9 18.8 18.2 17.6 17.4 17 C13.1 13 8.3 7.4 4.4 2.9 C4 2.4 3.2 1.6 3 2 Z" />
+      </svg>
+    </div>
+
+    <!-- side scroll-progress rail (built by JS) -->
+    <nav class="rail" data-rail aria-label="Progreso de secciones"></nav>
+
+    <!-- ============ NAV (wordmark · CTA) ============ -->
+    <header class="nav" data-nav>
+      <a class="nav__logo" href="#top" aria-label="Symple Ventas — inicio">
+        <img src="/assets/brand/symple-wordmark-white.svg" alt="Symple" />
+      </a>
+      <nav class="nav__menu" aria-label="Ir a una sección">
+        <a href="#lugar" data-nav-link>¿Dónde será el evento?</a>
+        <a href="#logistica" data-nav-link>¿Cuál es la logística?</a>
+        <a href="#hotel" data-nav-link>¿Dónde hospedarme?</a>
+        <a href="#que-incluye" data-nav-link>¿Qué incluye la experiencia?</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- ======================= HERO (typography-led) ======================= -->
+      <section class="hero" data-hero>
+        <div class="hero__content">
+          <p class="hero__chip" data-reveal>28 - 29 y 30 Julio · México - Guadalajara · 2026</p>
+
+          <h1 class="hero__title hero__title--story">
+            <span class="hero__line" data-line><span>El negocio de mi familia</span></span>
+            <span class="hero__line" data-line><span>quebró por culpa</span></span>
+            <span class="hero__line" data-line><span>de la pandemia.</span></span>
+          </h1>
+          <!-- rough hand-drawn underline under the headline (not a friendly mark) -->
+          <svg class="hero__underline" viewBox="0 0 200 16" preserveAspectRatio="none" aria-hidden="true" data-doodle>
+            <path pathLength="1" d="M4 8 C40 3 70 12 104 6 C140 1 168 11 196 6 M6 12 C44 7 74 14 108 9 C144 5 170 13 194 10" />
+          </svg>
+
+          <!-- flecha animada: lleva a la siguiente sección -->
+          <a class="hero__scroll" href="#historia" data-hero-scroll aria-label="Ir a la siguiente sección">
+            <svg viewBox="0 0 24 16" fill="none" aria-hidden="true">
+              <path d="M4 4 L12 12 L20 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- ambient hand-drawn marks — raw, not cheerful: a business going under -->
+        <div class="hero__doodles" aria-hidden="true">
+          <!-- declining trend line crashing down with an arrowhead -->
+          <svg class="hero-doodle hero-doodle--graph" viewBox="0 0 84 56" data-doodle><path pathLength="1" d="M4 8 L20 22 L31 15 L46 33 L57 27 L74 46 M74 46 L63 45 M74 46 L71 34"/></svg>
+          <!-- rain cloud -->
+          <svg class="hero-doodle hero-doodle--cloud" viewBox="0 0 72 58" data-doodle><path pathLength="1" d="M18 32 q-13 0 -13 -10 q0 -9 11 -9 q3 -11 15 -11 q13 0 15 12 q11 -1 11 9 q0 9 -12 9 Z M22 40 l-4 11 M36 41 l-4 11 M50 40 l-4 11"/></svg>
+          <!-- a crack (quebró) -->
+          <svg class="hero-doodle hero-doodle--crack" viewBox="0 0 28 62" data-doodle><path pathLength="1" d="M14 3 L10 16 L18 24 L9 37 L16 47 L11 60"/></svg>
+          <!-- heavy down arrow -->
+          <svg class="hero-doodle hero-doodle--down" viewBox="0 0 46 62" data-doodle><path pathLength="1" d="M23 5 C18 24 27 36 23 52 M23 52 L13 41 M23 52 L33 41"/></svg>
+          <!-- scratched-out X -->
+          <svg class="hero-doodle hero-doodle--scratch" viewBox="0 0 30 30" data-doodle><path pathLength="1" d="M5 6 C13 11 19 19 25 25 M25 7 C18 12 12 19 5 24"/></svg>
+          <!-- cracked piggy bank, a coin slipping out — "el negocio quebró" -->
+          <svg class="hero-doodle hero-doodle--piggy" viewBox="0 0 96 88" data-doodle><path pathLength="1" d="M16 46 q-2 -22 26 -26 q30 -4 38 12 q7 14 -3 24 q-10 10 -32 9 q-26 -1 -29 -19 Z"/><path d="M34 21 l5 -9 l7 7"/><path d="M80 40 q7 1 6 8 q-1 6 -8 5"/><path d="M68 38 l0.01 0"/><path d="M32 66 l-1 9 M58 67 l1 9"/><path d="M42 23 l10 -2"/><path d="M52 24 l-5 11 l8 8 l-7 11 l6 9"/><path d="M16 42 q-8 -2 -6 -8 q2 -5 7 -3"/><path d="M26 82 q0 -4 6 -4 q6 0 6 4 q0 4 -6 4 q-6 0 -6 -4 Z"/></svg>
+        </div>
+      </section>
+
+      <!-- ======================= 2 · HISTORIA (mamá) ======================= -->
+      <section class="section historia" id="historia" aria-labelledby="hist-title">
+        <div class="section__inner">
+          <p class="eyebrow" data-sr>Cómo empezó todo</p>
+          <h2 class="section__title" id="hist-title" data-sr>
+            Desde que tengo memoria, recuerdo que mis papás siempre se han
+            dedicado a <span class="hl">VENDER LIBROS</span>.
+          </h2>
+
+          <!-- beat 1 · los papás (portrait + arrow doodles) -->
+          <div class="mama__beat" data-sr-group>
+            <figure class="mama__portrait" data-sr>
+              <img src="/assets/media/mama/papa-trabajando.jpg" alt="El papá de Julio trabajando" loading="lazy" />
+            </figure>
+            <div class="mama__prose" data-sr>
+              <!-- el cambaceo: tocando la puerta con el libro en la mano -->
+              <figure class="ink-doodle mama__doodle mama__doodle--knock" aria-hidden="true">
+                <svg viewBox="0 0 150 122" fill="none">
+                  <!-- la puerta -->
+                  <path d="M100 12 l38 0 l0 102 l-38 0 Z"/>
+                  <path d="M107 22 l24 0 l0 38 l-24 0 Z"/>
+                  <circle class="ink-fill" cx="104" cy="68" r="2"/>
+                  <!-- toc toc -->
+                  <path d="M90 30 q7 8 0 17"/>
+                  <path d="M84 25 q11 13 0 27"/>
+                  <!-- el vendedor -->
+                  <circle cx="34" cy="34" r="13"/>
+                  <circle class="ink-fill" cx="30" cy="33" r="1.8"/>
+                  <circle class="ink-fill" cx="39" cy="33" r="1.8"/>
+                  <path d="M29 40 q5 5 11 0"/>
+                  <path d="M34 47 l0 36"/>
+                  <path d="M34 83 l-12 27 M34 83 l12 27"/>
+                  <!-- brazo tocando la puerta -->
+                  <path d="M34 56 C 54 44 74 38 90 36"/>
+                  <!-- brazo con el libro -->
+                  <path d="M34 60 q-15 5 -17 18"/>
+                  <path d="M6 78 l22 -5 l3 11 l-22 5 Z"/>
+                  <path d="M17 76 l3 11"/>
+                </svg>
+              </figure>
+              <p>Aplicaban el típico <em>“cambaceo”</em>.</p>
+              <p class="mama__aside">
+                (si eres muy joven, el cambaceo es ir a tocar puertas y ofrecer lo
+                que vendes, todo 100% en frío)
+              </p>
+            </div>
+          </div>
+
+          <!-- beat 2 · el negociazo → deja de gotear -->
+          <div class="mama__beat mama__beat--reverse" data-sr-group>
+            <figure class="mama__photo" data-sr>
+              <img src="/assets/media/mama/mama-vendiendo-libros.jpg" alt="La mamá de Julio vendiendo libros" loading="lazy" />
+            </figure>
+            <div class="mama__prose" data-sr>
+              <p>Al principio, era un <strong>negociazo</strong>.</p>
+              <p>Pero cómo todo gran negocio.</p>
+              <p>
+                Hay momentos en los que
+                <span class="doodle">“deja de gotear”<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4"/></svg></span>.<span class="ink-doodle drop-doodle" aria-hidden="true">
+                  <svg viewBox="0 0 40 60" fill="none">
+                    <!-- goteo: rayitas cayendo -->
+                    <path d="M21 4 l-1 5"/>
+                    <path d="M20 14 l-1 4"/>
+                    <!-- la gota -->
+                    <path d="M19 26 q-9 13 -8 20 q1 9 9 9 q8 0 9 -9 q1 -7 -9 -20 Z"/>
+                    <!-- brillito -->
+                    <path d="M15 44 q0 4 3 6"/>
+                  </svg>
+                </span>
+              </p>
+              <p class="mama__aside">(ya no te da tantos resultados, pero así es cómo lo diría Don Melo)</p>
+            </div>
+          </div>
+
+          <!-- beat 3 · la pandemia + la deuda (typographic punch) -->
+          <div class="mama__punch" data-sr-group>
+            <p class="mama__kicker" data-sr>Para mí, mi familia y muchos negocios más,<br />ese momento fue...</p>
+            <h3 class="mama__bigword" data-sr>
+              la <span class="doodle">PANDEMIA<svg class="doodle__mark doodle__mark--circle" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M90 16 C74 4 30 2 13 15 C2 24 4 42 26 47 C58 54 95 45 91 22 C89 12 80 7 67 7"/></svg></span>.
+            </h3>
+            <p class="mama__line" data-sr>NADIE estaba preparado para lo que iba a pasar...</p>
+            <p class="mama__line" data-sr>
+              Estábamos acostumbrados a los <em>referidos</em>.<br />
+              A lo <em>presencial</em>.<br />
+              A ir de puerta en puerta buscando la venta del día.
+            </p>
+            <!-- de puerta en puerta: caminando con la bolsa de libros -->
+            <figure class="ink-doodle mama__doodle mama__doodle--walk" data-sr aria-hidden="true">
+              <svg viewBox="0 0 180 122" fill="none">
+                <!-- pasitos atrás -->
+                <path d="M22 58 l-11 0 M27 73 l-13 0"/>
+                <!-- el vendedor caminando -->
+                <circle cx="50" cy="26" r="12"/>
+                <circle class="ink-fill" cx="47" cy="25" r="1.8"/>
+                <circle class="ink-fill" cx="55" cy="25" r="1.8"/>
+                <path d="M46 32 q5 4 10 0"/>
+                <path d="M52 38 q5 15 2 31"/>
+                <path d="M50 47 q-12 8 -10 20"/>
+                <path d="M54 47 q13 5 14 17"/>
+                <!-- la bolsa -->
+                <path d="M58 64 l24 0 l-3 26 l-19 0 Z"/>
+                <path d="M64 64 q6 -10 12 0"/>
+                <!-- piernas en marcha -->
+                <path d="M54 69 l20 23 M74 92 l10 -1"/>
+                <path d="M54 69 l-16 26 M38 95 l9 3"/>
+                <!-- flecha hacia adelante -->
+                <path d="M104 52 q22 -8 44 -2 M148 50 l-12 -6 M148 50 l-9 9"/>
+              </svg>
+            </figure>
+            <figure class="mama__photo mama__punch-photo" data-sr>
+              <img src="/assets/media/mama/mama-libros.jpg" alt="La mamá de Julio con sus libros" loading="lazy" />
+            </figure>
+            <p class="mama__line" data-sr>Sin embargo, ya nadie podía salir.</p>
+            <p class="mama__line" data-sr>
+              No había gente<br />
+              Nadie te abría la puerta<br />
+              Estaba prohibido salir de tu casa<br />
+              o abrir tu negocio.
+            </p>
+            <p class="mama__line" data-sr>Y peor aún, los gastos seguían.</p>
+            <p class="mama__line" data-sr><em>Seguían<br />Seguían<br />Y seguían</em></p>
+            <!-- los gastos: las monedas escapándose hasta desaparecer -->
+            <figure class="ink-doodle mama__doodle mama__doodle--coins" data-sr aria-hidden="true">
+              <svg viewBox="0 0 190 92" fill="none">
+                <!-- la pila que se va vaciando -->
+                <path d="M12 74 q0 -7 15 -7 q15 0 15 7 q0 7 -15 7 q-15 0 -15 -7 Z"/>
+                <path d="M14 60 q0 -7 15 -7 q15 0 15 7 q0 7 -15 7 q-15 0 -15 -7 Z"/>
+                <!-- moneda escapándose -->
+                <path d="M48 52 q22 -28 48 -4" stroke-dasharray="3 7"/>
+                <circle cx="86" cy="62" r="11"/>
+                <path d="M81 62 l10 0"/>
+                <!-- moneda desapareciendo -->
+                <circle cx="142" cy="40" r="9" stroke-dasharray="4 6"/>
+                <path d="M162 30 l7 -5 M165 42 l8 0 M158 22 l4 -7"/>
+              </svg>
+            </figure>
+            <p class="mama__line" data-sr>Y hay una regla general:</p>
+
+            <!-- the doodled equation -->
+            <div class="mama__eq" data-sr aria-label="Más gasto, menos ingreso, igual a deuda">
+              <span class="mama__eq-row"><b>+</b> gasto</span>
+              <span class="mama__eq-row"><b>–</b> ingreso</span>
+              <span class="mama__eq-rule" aria-hidden="true"></span>
+              <span class="mama__eq-row mama__eq-row--total">
+                <b>=</b>
+                <span class="doodle">DEUDA<svg class="doodle__mark doodle__mark--circle" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M90 16 C74 4 30 2 13 15 C2 24 4 42 26 47 C58 54 95 45 91 22 C89 12 80 7 67 7"/></svg></span>
+              </span>
+            </div>
+            <p class="mama__line mama__line--quiet" data-sr>
+              NOS ESTÁBAMOS ENDEUDANDO Y NO TENÍAMOS CÓMO PAGAR<br /><br />
+              NUESTRO NEGOCIO FAMILIAR ESTABA CERRADO
+            </p>
+          </div>
+
+          <!-- beat 4 · el terreno + mamá empieza a grabar -->
+          <div class="mama__beat" data-sr-group>
+            <figure class="mama__photo mama__photo--wide" data-sr>
+              <img src="/assets/media/mama/terreno.jpg" alt="El terrenito que compró el papá de Julio" loading="lazy" />
+            </figure>
+            <div class="mama__prose" data-sr>
+              <p class="mama__qtitle">¿Cómo solucionas?</p>
+              <p>
+                En ese entonces, mi papá tenía un terrenito que había comprado
+                <span class="doodle">en una borrachera<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4"/></svg></span>
+                hace 20 años <span class="mama__aside mama__aside--inline">(lo de la borrachera es real jaja)</span>.<span class="ink-doodle drink-doodle" aria-hidden="true">
+                  <svg viewBox="0 0 66 60" fill="none">
+                    <!-- la botella -->
+                    <path d="M15 22 q-5 6 -5 13 l1 15 q0 6 6 6 l8 0 q6 0 6 -6 l1 -15 q0 -7 -5 -13 l0 -9 l-12 0 Z"/>
+                    <path d="M14 9 l14 0"/>
+                    <path d="M14 38 l14 0 l-1 11 l-12 0 Z"/>
+                    <!-- el caballito -->
+                    <path d="M44 36 l3 17 l10 0 l3 -17 Z"/>
+                    <path d="M42 36 q10 -4 20 0"/>
+                    <!-- chispitas del brindis -->
+                    <path d="M52 27 l0 -7 M44 29 l-5 -5 M60 29 l5 -5"/>
+                  </svg>
+                </span>
+              </p>
+              <p>
+                Y se nos ocurrió la brillante idea de dividirlo en partes y comenzar
+                a venderlo.
+              </p>
+              <p>Para salir de deudas, la meta era vender 30 terrenos.</p>
+            </div>
+          </div>
+
+          <!-- beat 4b · mamá empieza a grabar (el video + la lucha) -->
+          <div class="mama__beat mama__beat--reverse" data-sr-group>
+            <figure class="mama__video" data-sr>
+              <button class="vtile" data-video type="button" aria-label="Reproducir el primer video de la mamá de Julio">
+                <video src="/assets/media/mama/iniciativa-mama.mp4" poster="/assets/media/mama/iniciativa-mama-poster.jpg" playsinline preload="none" loop></video>
+                <span class="vtile__play" aria-hidden="true"></span>
+              </button>
+            </figure>
+            <div class="mama__prose" data-sr>
+              <p><strong>Mi mamá tomó la iniciativa</strong> y comenzó hacer videos en redes sociales.</p>
+              <p>
+                Pero nadie la veía :(<br />
+                Y además<br />
+                Era muchísimo tiempo el que le tomaba crear su contenido.
+              </p>
+              <p><em>Era buena mandando audios y fotos por whats</em></p>
+              <p>sin embargo,</p>
+              <p>
+                <strong>No sabía</strong> nada de redes<br />
+                <strong>No sabía</strong> grabarse<br />
+                <strong>No sabía</strong> editar
+              </p>
+              <p class="mama__line--quiet">
+                Solo tenía un celular<br />
+                Los micrófonos que le regalé<br />
+                Y <em class="pop-em">toda la actitud para reventarla</em> <span class="aside-whisper">(como seguramente tú)</span>
+              </p>
+              <p class="pullquote">Para que mi mamá fuera viral, estaba DIFICILÍSIMO.</p>
+            </div>
+          </div>
+
+          <!-- las pocas views de sus primeros videos -->
+          <figure class="mama__shots" aria-label="Capturas de los primeros videos de la mamá, con pocas vistas">
+            <button class="shot" data-lightbox type="button" aria-label="Ver captura de pocas vistas 1">
+              <img src="/assets/media/mama/pocas-views-1.jpg" alt="Captura de un video con pocas vistas" loading="lazy" />
+            </button>
+            <button class="shot" data-lightbox type="button" aria-label="Ver captura de pocas vistas 2">
+              <img src="/assets/media/mama/pocas-views-2.jpg" alt="Captura de un video con pocas vistas" loading="lazy" />
+            </button>
+            <button class="shot" data-lightbox type="button" aria-label="Ver captura de pocas vistas 3">
+              <img src="/assets/media/mama/pocas-views-3.jpg" alt="Captura de un video con pocas vistas" loading="lazy" />
+            </button>
+          </figure>
+
+          <!-- beat 5 · el video viral (el payoff) -->
+          <div class="mama__beat mama__beat--reverse mama__beat--payoff" data-sr-group>
+            <figure class="mama__photo mama__photo--portrait" data-sr>
+              <img src="/assets/media/mama/viral-momento.jpg" alt="La mamá de Julio viendo su video viral" loading="lazy" />
+              <!-- sparkle doodles around the viral moment -->
+              <svg class="mama__spark mama__spark--1 ink-doodle" viewBox="0 0 40 40" aria-hidden="true" data-doodle><path pathLength="1" d="M20 2 C21 14 26 19 38 20 C26 21 21 26 20 38 C19 26 14 21 2 20 C14 19 19 14 20 2 Z"/></svg>
+              <svg class="mama__spark mama__spark--2 ink-doodle" viewBox="0 0 40 40" aria-hidden="true" data-doodle><path pathLength="1" d="M20 4 C21 14 26 19 36 20 C26 21 21 26 20 36 C19 26 14 21 4 20 C14 19 19 14 20 4 Z"/></svg>
+            </figure>
+            <div class="mama__prose" data-sr>
+              <p class="mama__kicker mama__kicker--start">Sin embargo...</p>
+              <p class="mama__kicker mama__kicker--start">
+                Un día mientras nos tomábamos un café.<br />
+                Ella me dice:
+              </p>
+              <p class="mama__kicker mama__kicker--start">
+                <em>“Hijo Julio, ¿me ayudas a grabar un video?, hoy vengo bella para la cámara”</em>
+              </p>
+              <p class="mama__kicker mama__kicker--start">
+                Pensamos en una idea ganadora juntos, buscamos un formato que ya me
+                hubiese funcionado y creamos el guión al momento.
+              </p>
+              <p class="mama__kicker mama__kicker--start">El resultado...</p>
+              <!-- el celular con el contador explotando hacia arriba -->
+              <figure class="ink-doodle mama__doodle mama__doodle--viral" aria-hidden="true">
+                <svg viewBox="0 0 150 140" fill="none">
+                  <!-- el contador disparándose -->
+                  <path d="M64 44 q1 -16 0 -27 M64 17 l-7 9 M64 17 l7 9"/>
+                  <!-- estrellitas -->
+                  <path d="M24 28 C25 36 29 40 37 41 C29 42 25 46 24 54 C23 46 19 42 11 41 C19 40 23 36 24 28 Z"/>
+                  <path d="M112 26 C113 33 116 36 123 37 C116 38 113 41 112 48 C111 41 108 38 101 37 C108 36 111 33 112 26 Z"/>
+                  <!-- el cel -->
+                  <path d="M44 48 l40 0 q5 0 5 5 l0 70 q0 5 -5 5 l-40 0 q-5 0 -5 -5 l0 -70 q0 -5 5 -5 Z"/>
+                  <path d="M58 56 l12 0"/>
+                  <path d="M58 82 l17 10 l-17 10 Z"/>
+                  <!-- ondas saliendo -->
+                  <path d="M95 66 q9 8 0 18 M101 60 q14 13 0 30"/>
+                </svg>
+              </figure>
+              <ul class="mama__stats">
+                <li>un video de <span class="mama__stat-num" data-countup>+500k</span> views</li>
+                <li>que le dió <span class="mama__stat-num" data-countup>+20k</span> seguidores</li>
+                <li>que la hizo la <span class="mama__stat-word">favorita</span> de su industria</li>
+              </ul>
+              <div class="mama__proof" aria-label="El alcance y las reproducciones del video viral">
+                <figure class="mama__proof-card">
+                  <button class="shot" data-lightbox type="button" aria-label="Ver las reproducciones del video">
+                    <img src="/assets/media/mama/muchas-views.jpg" alt="Captura de las reproducciones del video viral" loading="lazy" />
+                  </button>
+                  <figcaption class="mama__proof-cap"><strong>542K</strong> reproducciones</figcaption>
+                </figure>
+                <figure class="mama__proof-card">
+                  <button class="shot" data-lightbox type="button" aria-label="Ver el alcance del video">
+                    <img src="/assets/media/mama/gran-alcance.jpg" alt="Captura del alcance del video viral" loading="lazy" />
+                  </button>
+                  <figcaption class="mama__proof-cap"><strong>30.3K</strong> me gusta</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- el desenlace: centrado en el viewport, debajo del payoff -->
+          <div class="mama__coda">
+            <p class="mama__esperanza" data-sr>Y que mejor aún...</p>
+            <p class="mama__esperanza" data-sr>Que le devolvió la <em>esperanza</em>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 3 · STORY (Enero) ======================= -->
+      <section class="section story" id="story" aria-labelledby="story-title">
+        <div class="section__inner">
+          <div class="story__intro">
+            <div class="story__intro-text">
+              <p class="eyebrow" data-sr>Enero 2026</p>
+              <h2 class="section__title" id="story-title" data-sr>
+                Hicimos un evento loquísimo que marcó un antes y un después
+                <strong>en varios negocios</strong>.
+              </h2>
+              <p class="lead" data-sr>
+                Muchos de los empresarios que estuvieron esos días, salieron con
+                videos listos para subir.
+              </p>
+            </div>
+            <figure class="story__photo story__intro-photo" data-sr>
+              <img src="/assets/media/invitacion/ultima-foto.jpg" alt="Julio Iero" loading="lazy" />
+            </figure>
+          </div>
+
+          <!-- todos los videos del evento en un carrusel · auto-avanza, muted; clic para reproducir y activar el sonido -->
+          <p class="lead story__viral-lead" data-sr>Varios de estos videos se hicieron virales.</p>
+          <div class="viral" data-sr>
+            <div class="viral__track" data-viral-carousel>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video de Jair">
+                  <video src="/assets/media/story/jair.mp4" poster="/assets/media/story/jair-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <a class="viral__ig" href="https://www.instagram.com/jairuizc/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="viral__ig-dot" cx="17" cy="7" r="1.3"/></svg>
+                </a>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video de Marco">
+                  <video src="/assets/media/story/marco.mp4" poster="/assets/media/story/marco-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video de Paco Benítez">
+                  <video src="/assets/media/story/paco.mp4" poster="/assets/media/story/paco-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video viral 1">
+                  <video src="/assets/media/story/viral-1.mp4" poster="/assets/media/story/viral-1-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video viral 2">
+                  <video src="/assets/media/story/viral-2.mp4" poster="/assets/media/story/viral-2-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <a class="viral__ig" href="https://www.instagram.com/soyivonnetorres/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="viral__ig-dot" cx="17" cy="7" r="1.3"/></svg>
+                </a>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video viral 3">
+                  <video src="/assets/media/story/viral-3.mp4" poster="/assets/media/story/viral-3-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <a class="viral__ig" href="https://www.instagram.com/mikadelosrios/" target="_blank" rel="noopener" aria-label="Ver en Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="viral__ig-dot" cx="17" cy="7" r="1.3"/></svg>
+                </a>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video viral 4">
+                  <video src="/assets/media/story/viral-4.mp4" poster="/assets/media/story/viral-4-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+              <div class="viral__tile" data-viral>
+                <button class="vtile" data-viral-play type="button" aria-label="Reproducir video viral 5">
+                  <video src="/assets/media/story/viral-5.mp4" poster="/assets/media/story/viral-5-poster.jpg" muted loop playsinline preload="none"></video>
+                  <span class="vtile__play" aria-hidden="true"></span>
+                </button>
+                <button class="viral__sound" data-viral-sound type="button" aria-label="Activar o silenciar el sonido">
+                  <svg class="viral__icon viral__icon--off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+                  <svg class="viral__icon viral__icon--on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M16 8.5a5 5 0 0 1 0 7M19.5 5a9 9 0 0 1 0 14"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- beat: la apuesta (merged) -->
+          <div class="apuesta" id="apuesta" data-sr-group>
+            <p class="eyebrow" data-sr>La apuesta</p>
+            <h2 class="section__title apuesta__title" data-sr>
+              Y unos más picudos, apostaron
+              <span class="doodle">2500&nbsp;USD<svg class="doodle__mark doodle__mark--circle" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M90 16 C74 4 30 2 13 15 C2 24 4 42 26 47 C58 54 95 45 91 22 C89 12 80 7 67 7" /></svg></span> a ver quién hacía el video más viral.
+            </h2>
+
+            <button class="viralidad__preview apuesta__video" data-video data-sr type="button" aria-label="Reproducir video de la apuesta">
+              <video
+                src="/assets/media/story/naranja-amarillo.mp4"
+                poster="/assets/media/story/naranja-amarillo-poster.jpg"
+                playsinline loop preload="none"
+              ></video>
+              <span class="vtile__play" aria-hidden="true"></span>
+              <span class="viralidad__preview-tag">Ustedes tienen la última palabra 😳</span>
+            </button>
+
+            <div class="viralidad__stack" data-sr>
+              <button class="shot" data-lightbox type="button" aria-label="Ver captura 1">
+                <img src="/assets/media/apuesta-viralidad/foto-1.jpg" alt="Captura de WhatsApp de la apuesta" loading="lazy" />
+              </button>
+              <button class="shot" data-lightbox type="button" aria-label="Ver captura 2">
+                <img src="/assets/media/apuesta-viralidad/foto-2.jpg" alt="Captura de WhatsApp de la apuesta" loading="lazy" />
+              </button>
+              <button class="shot" data-lightbox type="button" aria-label="Ver captura 3">
+                <img src="/assets/media/apuesta-viralidad/foto-3.jpg" alt="Captura de WhatsApp de la apuesta" loading="lazy" />
+              </button>
+              <button class="shot" data-lightbox type="button" aria-label="Ver captura 4">
+                <img src="/assets/media/apuesta-viralidad/foto-4.jpg" alt="Captura de WhatsApp de la apuesta" loading="lazy" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 4 · INVITACIÓN (light moment) ======================= -->
+      <section class="section invitacion" id="invitacion" aria-labelledby="inv-title">
+        <div class="section__inner invitacion__inner">
+          <div class="invitacion__text invitacion__top">
+            <p class="eyebrow eyebrow--dark" data-sr>Una invitación personal</p>
+            <h2 class="section__title" id="inv-title" data-sr>
+              Y si estás leyendo esto, es porque quiero que estés en la próxima locura que haremos.<svg class="inv-heart" viewBox="0 0 32 30" aria-hidden="true" data-doodle><path pathLength="1" d="M16 27 C6 19 3 13 3 9 C3 4 11 3 16 9 C21 3 29 4 29 9 C29 13 26 19 16 27 Z"/></svg>
+            </h2>
+            <p class="lead lead--dark" data-sr>
+              <!-- el calendario con los 3 días marcados -->
+              <span class="ink-doodle inv-doodle inv-doodle--cal" aria-hidden="true">
+                <svg viewBox="0 0 96 88" fill="none">
+                  <path d="M9 18 l78 0 l0 62 l-78 0 Z"/>
+                  <path d="M9 34 l78 0"/>
+                  <path d="M28 10 l0 14 M68 10 l0 14"/>
+                  <circle cx="28" cy="50" r="9"/>
+                  <circle cx="48" cy="50" r="9"/>
+                  <circle cx="68" cy="50" r="9"/>
+                  <path d="M22 68 l12 0 M42 68 l12 0 M62 68 l12 0"/>
+                </svg>
+              </span>
+              Que este <span class="hl-mark">28, 29 y 30 de Julio del 2026 en Guadalajara</span><br />
+              puedas convertir tu contenido de redes sociales en
+              <em class="hl-mark">tu mejor vendedor</em>.
+            </p>
+            <p class="lead lead--dark" data-sr>
+              Que te lleves un paso a paso y mis sistemas de IA para hacer el
+              contenido de meses en minutos...
+            </p>
+          </div>
+          <figure class="invitacion__photo" data-sr>
+            <img src="/assets/media/invitacion/ultima-foto.jpg" alt="Julio Iero" loading="lazy" />
+          </figure>
+          <div class="invitacion__text invitacion__bottom">
+            <p class="lead lead--dark" data-sr>
+              Y obviamente, un plan de acción claro, para convertir las views en
+              ventas.
+              <!-- views → ventas: el ojito que se vuelve moneda -->
+              <span class="ink-doodle inv-doodle inv-doodle--views" aria-hidden="true">
+                <svg viewBox="0 0 142 58" fill="none">
+                  <path d="M6 29 q20 -19 41 0 q-21 19 -41 0 Z"/>
+                  <circle cx="26" cy="29" r="6"/>
+                  <path d="M56 29 q15 -11 33 -1 M89 28 l-9 -6 M89 28 l-8 7"/>
+                  <circle cx="114" cy="29" r="15"/>
+                  <path d="M114 20 l0 18"/>
+                  <path d="M120 24 q-7 -4 -11 1 q4 6 9 4 q5 4 -2 7"/>
+                </svg>
+              </span>
+            </p>
+            <p class="pullquote pullquote--dark">Así cómo pasó con mi mamá.</p>
+            <p class="lead lead--dark" data-sr>
+              <!-- el robotito EMPLiaDO saludando -->
+              <span class="ink-doodle inv-doodle inv-doodle--robot" aria-hidden="true">
+                <svg viewBox="0 0 110 118" fill="none">
+                  <path d="M55 18 l0 -9"/>
+                  <circle cx="55" cy="6" r="3"/>
+                  <path d="M30 18 l50 0 q6 0 6 6 l0 24 q0 6 -6 6 l-50 0 q-6 0 -6 -6 l0 -24 q0 -6 6 -6 Z"/>
+                  <circle class="ink-fill" cx="44" cy="34" r="3"/>
+                  <circle class="ink-fill" cx="66" cy="34" r="3"/>
+                  <path d="M44 44 q11 7 22 0"/>
+                  <path d="M37 60 l36 0 l4 32 l-44 0 Z"/>
+                  <path d="M35 66 q-16 -3 -19 -18 M16 48 l-5 6 M16 48 l7 3"/>
+                  <path d="M75 66 q13 4 15 16"/>
+                  <path d="M47 92 l0 14 M63 92 l0 14"/>
+                  <path d="M95 26 l0 -10 M90 21 l10 0"/>
+                </svg>
+              </span>
+              Mi objetivo, es que saliendo de estos 3 días de implementación,
+              <em class="hl-mark">“chat gpiti”</em> ó <em class="hl-mark">“clod”</em>
+              sea tu mejor <strong class="shout">EMPLiaDO</strong>.
+            </p>
+          </div>
+          <div class="invitacion__tail">
+            <p class="lead lead--dark" data-sr>
+              — que puedas ganar horas a la semana por la chamba repetitiva que ya
+              NO tendrás que hacer <span class="aside-whisper">(porque la IA podrá hacerlo por ti jiji)</span>.
+            </p>
+            <p class="lead lead--dark" data-sr>
+              — Y que obviamente, puedas hacer de tus redes sociales tu mejor
+              vendedor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 6 · CLIENTES (liquid glass) ======================= -->
+      <section class="section clientes" id="clientes" aria-labelledby="cli-title">
+        <div class="section__blobs" aria-hidden="true">
+          <span class="blob blob--1"></span>
+          <span class="blob blob--2"></span>
+        </div>
+        <div class="section__inner">
+          <p class="eyebrow" data-sr><span class="eyebrow__num"><span data-countup>+5K</span></span> dueños y dueñas de negocio</p>
+          <h2 class="section__title" id="cli-title" data-sr>
+            Han cambiado su realidad gracias saber crear contenido.
+          </h2>
+          <div class="clientes__grid" data-sr>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-1.jpg" alt="Cliente" loading="lazy" /></figure>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-2.jpg" alt="Cliente" loading="lazy" /></figure>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-3.jpg" alt="Cliente" loading="lazy" /></figure>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-4.jpg" alt="Cliente" loading="lazy" /></figure>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-5.jpg" alt="Cliente" loading="lazy" /></figure>
+            <figure class="glass-card"><img src="/assets/media/clientes/cliente-6.jpg" alt="Cliente" loading="lazy" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= Manifiesto ======================= -->
+      <section class="section manifiesto" id="manifiesto" aria-labelledby="man-title">
+        <div class="section__inner">
+          <div class="manifiesto__frame">
+            <svg
+              class="crayon-frame"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+              data-crayon
+            >
+              <rect
+                x="1.5"
+                y="1.5"
+                width="97"
+                height="97"
+                rx="3"
+                ry="4"
+                vector-effect="non-scaling-stroke"
+              />
+            </svg>
+            <p class="manifiesto__intro manifiesto__intro--tight" data-sr>
+              Soy joven y puede que aún me falten respuestas.
+            </p>
+            <ul class="manifiesto__dudas" data-sr>
+              <li>¿Cómo encontrar el amor?</li>
+              <li>¿O por qué la salsa verde casi siempre es más picosa que la roja?</li>
+            </ul>
+            <p class="manifiesto__intro" data-sr>
+              Sin embargo, hay algo de lo que estoy 100% seguro.
+            </p>
+            <p class="manifesto" data-manifesto data-sr id="man-title">
+              <span>PUEDO</span> <span>HACERTE</span> <span>EL</span>
+              <span>FAVORITO</span> <span>DE</span> <span>TU</span>
+              <span>INDUSTRIA.</span>
+            </p>
+            <br />
+            <p class="manifiesto__intro" data-sr>También estoy segurísimo,</p>
+            <p class="manifiesto__close" data-sr>
+              QUE UN VIDEO VIRAL PUEDE PAGARTE ESAS VACACIONES A JAPÓN O EUROPA QUE
+              SIEMPRE HAS SOÑADO CON TU FAMILIA.
+            </p>
+            <p class="manifiesto__close" data-sr>
+              Y este 28, 29 y 30 de Julio,<br />
+              quiero sumarte para poder hacerlo realidad.
+            </p>
+            <p class="signature" data-sr>
+              Con cariño y un vaso de café en la mano,<span class="ink-doodle sig-coffee" aria-hidden="true"><svg viewBox="0 0 60 64" fill="none"><path d="M10 32 l4 22 q1 5 7 5 l12 0 q6 0 7 -5 l4 -22 Z"/><path d="M9 32 q21 -6 40 0"/><path d="M44 38 q10 -1 9 9 q-1 8 -11 7"/><path d="M22 24 q-5 -5 0 -10 q5 -5 0 -9"/><path d="M33 24 q-5 -5 0 -10 q5 -5 0 -9"/></svg></span><br />
+              <strong>Julio Iero.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- mini banner diferenciado · nombre del evento + fechas -->
+      <div class="udm-banner" role="region" aria-label="Un día menos experience · 28, 29 y 30 de Julio">
+        <p class="udm-banner__title" data-sr>Un día menos experience</p>
+        <p class="udm-banner__dates" data-sr>28, 29, y 30 de Julio</p>
+      </div>
+
+      <!-- ======================= 7 · DÓNDE (lugar) ======================= -->
+      <section class="section lugar" id="lugar" aria-labelledby="lugar-title">
+        <div class="section__inner lugar__inner">
+          <div class="lugar__honest-row">
+            <div class="lugar__text">
+              <p class="eyebrow" data-sr>¿Dónde será tu evento?</p>
+              <h2 class="section__title" id="lugar-title" data-sr>
+                Terrania, Terraza y Salón.
+              </h2>
+              <p class="lead" data-sr>Guadalajara, Jalisco.</p>
+              <p class="evento__honest" data-sr>
+            Te soy muy honesto.<br />
+            Queremos que sea una experiencia <strong class="shout">LOQUÍSIMA</strong><br />
+            Y seguramente así sera, el lugar esta <strong class="shout">ESPECTACULAR</strong>.<br /><br />
+            Quizás tengamos caballos para
+            hacer <span class="doodle">hooks<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4" /></svg></span> jejeje.
+              </p>
+            </div>
+
+          <!-- horse doodle (los caballos de Terrania) being filmed -->
+          <figure class="lugar__doodle ink-doodle" data-sr aria-hidden="true">
+            <svg viewBox="0 0 348 188" fill="none">
+              <!-- the horse, mirrored so it faces the camera on its right -->
+              <g transform="translate(275 0) scale(-1 1)">
+              <!-- back + hindquarters + belly (one flowing outline) -->
+              <path d="M74 80 q12 -12 34 -11 q48 1 92 7 q22 3 22 27 q0 19 -17 25 q-13 4 -33 4 l-74 0 q-20 0 -24 -18"/>
+              <!-- chest / front of neck down to brisket -->
+              <path d="M74 80 q1 18 14 30"/>
+              <!-- back of neck up to the poll -->
+              <path d="M104 70 q-10 -32 -36 -42"/>
+              <!-- head: cheek + long muzzle pointing down-left -->
+              <path d="M68 30 q-24 3 -34 28 q-6 16 7 24 q13 6 20 -8 q4 -9 1 -22"/>
+              <!-- ears -->
+              <path d="M66 28 q-1 -13 8 -16 M70 27 q7 -9 17 -6"/>
+              <!-- eye + nostril -->
+              <circle class="ink-fill" cx="52" cy="46" r="2.6"/>
+              <circle class="ink-fill" cx="39" cy="64" r="1.7"/>
+              <!-- mane flowing down the back of the neck -->
+              <path d="M78 12 q12 10 9 30 q-2 13 -13 20"/>
+              <!-- front legs -->
+              <path d="M98 122 l-3 44 M92 166 l13 0"/>
+              <path d="M124 124 l-2 42 M117 166 l13 0"/>
+              <!-- hind legs -->
+              <path d="M180 122 l3 44 M178 166 l13 0"/>
+              <path d="M202 118 l7 46 M206 164 l13 0"/>
+              <!-- tail -->
+              <path d="M210 82 q28 8 31 46 q-11 -13 -19 -6 q8 -17 -12 -30"/>
+              </g>
+              <!-- video camera on a tripod, aimed at the horse's head -->
+              <path d="M286 52 l34 0 l0 27 l-34 0 Z"/>
+              <path d="M286 59 l-12 -6 l0 19 l12 -6 Z"/>
+              <path d="M294 52 l11 0 l0 -6 l-11 0 Z"/>
+              <circle cx="308" cy="65" r="5.5"/>
+              <path d="M303 79 l0 6"/>
+              <path d="M303 85 L280 170 M303 85 L306 172 M303 85 L327 168"/>
+              <path d="M291 127 l25 -2"/>
+              <!-- little "rec" sparks toward the head -->
+              <path d="M270 58 l-6 -2 M273 52 l-3 -6"/>
+            </svg>
+          </figure>
+          </div>
+
+          <div class="terrania-carousel" data-marquee-img aria-label="Fotos de Terrania" data-sr>
+            <div class="terrania-carousel__track">
+              <img src="/assets/media/terrania/terrania-01.jpg" alt="Terrania — terraza y salón" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-02.jpg" alt="Terrania — área del evento" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-03.jpg" alt="Terrania — espacio al aire libre" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-04.jpg" alt="Terrania — detalle del lugar" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-01.jpg" alt="" aria-hidden="true" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-02.jpg" alt="" aria-hidden="true" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-03.jpg" alt="" aria-hidden="true" loading="lazy" />
+              <img src="/assets/media/terrania/terrania-04.jpg" alt="" aria-hidden="true" loading="lazy" />
+            </div>
+          </div>
+
+          <a class="lugar__maplink" data-magnetic href="https://maps.app.goo.gl/ac3REgo6xAv37k6H8" target="_blank" rel="noopener" data-sr>
+            <span class="lugar__maplink-pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-5.686 7-11a7 7 0 1 0-14 0c0 5.314 7 11 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <circle cx="12" cy="10" r="2.4" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="lugar__maplink-text">
+              <span class="lugar__maplink-label">Ver ubicación en el mapa</span>
+              <span class="lugar__maplink-place">Terrania · Guadalajara, Jalisco</span>
+            </span>
+            <svg class="lugar__maplink-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- ======================= 7b · CUÁNDO (fechas) ======================= -->
+      <section class="section fechas" id="fechas" aria-labelledby="fechas-title">
+        <div class="section__inner">
+          <p class="eyebrow" data-sr>¿Qué fechas será?</p>
+
+          <h2 class="fechas__dates" id="fechas-title" data-sr>
+            <span class="fechas__num">28</span>
+            <span class="fechas__num">29</span>
+            <span class="fechas__num">30</span>
+          </h2>
+          <p class="fechas__month" data-sr>Julio 2026 · Guadalajara</p>
+
+          <div class="fechas__body">
+            <figure class="fechas__figure" data-sr>
+              <img src="/assets/media/evento/argentina.jpg" alt="Julio y su hermano Abin" loading="lazy" />
+            </figure>
+
+            <div class="fechas__aside">
+              <p class="fechas__tip" data-sr>
+                Te recomiendo llegar el día <strong>27</strong> a Guadalajara
+                para poder descansar y dormir bien <span class="aside-whisper">(ya que siempre iniciamos
+                temprano)</span>.<br /><br />
+                Y te recomiendo irte el día <strong>31</strong>. Si viviste la
+                experiencia pasada, sabes que se pone bueno el cotorreo,
+                quédate al menos un día para convivir o “<span class="doodle">conbeber<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4" /></svg></span>” en algunos casos<span class="ink-doodle beer-doodle" aria-hidden="true"><svg viewBox="0 0 64 52" fill="none"><!-- beer mug --><path d="M12 18 l5 28 q1 4 6 4 l9 0 q5 0 6 -4 l3 -28 Z"/><path d="M11 18 q12 -5 24 0"/><path d="M41 24 q9 0 8 9 q-1 8 -9 7"/><!-- wine glass --><path d="M58 8 q5 9 -2 16 q-7 6 -14 0 q-6 -7 -1 -16 Z"/><path d="M48 24 l2 17 M44 42 l13 -1"/><!-- clink sparks --><path d="M37 8 l-5 -5 M42 7 l0 -6 M47 9 l5 -4"/></svg></span> jeje.
+              </p>
+
+              <blockquote class="fechas__quote" data-sr>
+                <p class="fechas__quote-lead">
+                  <strong>Mi hermano</strong> siempre me dice:
+                  <em>“al cerebro le entran mejor las ideas cuándo duermes bien,</em>
+                </p>
+                <p class="fechas__quote-tail">y no cuándo te sientes cómo</p>
+                <p class="fechas__punch">
+                  <span class="fechas__punch-word">
+                    perro atropellado”
+                    <svg
+                      class="scribble"
+                      viewBox="0 0 100 60"
+                      preserveAspectRatio="none"
+                      aria-hidden="true"
+                      data-scribble
+                    >
+                      <ellipse cx="50" cy="30" rx="47" ry="26" vector-effect="non-scaling-stroke" />
+                    </svg>
+                  </span>
+                </p>
+
+                <!-- the literal "perro atropellado": a knocked-out doodle dog -->
+                <figure class="fechas__doodle" data-sr aria-hidden="true">
+                  <svg viewBox="0 0 240 140" fill="none" stroke="var(--linen)" stroke-width="2.4"
+                       stroke-linecap="round" stroke-linejoin="round">
+                    <g filter="url(#crayon)">
+                      <!-- body lying on its back -->
+                      <path d="M58 104 q4 -30 34 -31 q40 -1 78 1 q34 2 30 27 q-3 13 -34 12 q-44 1 -84 -1 q-23 -1 -24 -8 Z"/>
+                      <!-- head, flopped to the left -->
+                      <path d="M58 104 q-22 -2 -28 -22 q-5 -18 12 -27 q18 -9 30 6 q8 10 4 22"/>
+                      <!-- nose -->
+                      <path d="M30 80 q-7 0 -10 5"/>
+                      <circle cx="19" cy="86" r="2.6" fill="var(--linen)" stroke="none"/>
+                      <!-- floppy ear -->
+                      <path d="M52 62 q-2 -16 12 -20 q6 10 0 22"/>
+                      <!-- X eyes (knocked out) -->
+                      <path d="M34 70 l8 8 M42 70 l-8 8"/>
+                      <path d="M52 72 l7 7 M59 72 l-7 7"/>
+                      <!-- tongue lolling out -->
+                      <path d="M28 92 q-4 14 5 18 q8 -1 4 -13"/>
+                      <!-- four paws up in the air, slightly splayed -->
+                      <path d="M92 73 q-6 -26 -14 -38"/><circle cx="76" cy="31" r="5.5"/>
+                      <path d="M118 72 q-1 -30 4 -42"/><circle cx="123" cy="26" r="5.5"/>
+                      <path d="M150 72 q3 -28 12 -38"/><circle cx="165" cy="30" r="5.5"/>
+                      <path d="M176 75 q10 -22 24 -28"/><circle cx="202" cy="42" r="5.5"/>
+                      <!-- tail flopped on the ground -->
+                      <path d="M198 104 q22 2 30 -10 q-1 13 -12 17"/>
+                      <!-- dizzy swirl floating above the head -->
+                      <path d="M40 26 q11 -12 1 -19 q-12 -2 -8 10 q3 9 15 4"/>
+                      <!-- cheeky tire tracks across the belly -->
+                      <path d="M96 110 q40 -10 86 -2" stroke-dasharray="3 6" stroke-width="1.8"/>
+                      <path d="M98 118 q40 -10 84 -2" stroke-dasharray="3 6" stroke-width="1.8"/>
+                    </g>
+                  </svg>
+                  <figcaption class="fechas__doodle-cap">(literalmente)</figcaption>
+                </figure>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 8 · LOGÍSTICA ======================= -->
+      <section class="section logistica" id="logistica" aria-labelledby="log-title">
+        <div class="section__inner">
+          <div class="karli-row">
+            <div class="karli-text">
+              <p class="eyebrow" data-sr>¿Cuál es la logística?</p>
+              <h2 class="section__title" id="log-title" data-sr>
+                Para que no colapses.
+              </h2>
+              <p class="lead" data-sr>
+                Acomoda tu agenda y prepárate con tiempo (lo digo por mi hermano
+                <strong>Abin</strong> y mi
+                <span class="doodle karli-name">concierge Karli<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4" /></svg></span>, que siempre se tardan arreglándose).
+              </p>
+            </div>
+
+            <!-- Karli + Abin getting ready (they always take forever) -->
+            <figure class="karli-figure ink-doodle" data-sr role="img" aria-label="Karli y Abin arreglándose">
+              <svg viewBox="0 0 250 200" fill="none">
+                <!-- ===== KARLI (left): hand mirror + fixing her bun ===== -->
+                <!-- bun + hair -->
+                <circle cx="70" cy="24" r="7"/>
+                <path d="M48 52 q4 -27 22 -28 q19 1 23 28"/>
+                <!-- head -->
+                <circle cx="70" cy="60" r="25"/>
+                <!-- eyes + smile -->
+                <circle class="ink-fill" cx="62" cy="60" r="2.5"/>
+                <circle class="ink-fill" cx="80" cy="60" r="2.5"/>
+                <path d="M60 69 q11 8 22 0"/>
+                <!-- neck -->
+                <path d="M63 84 l0 9 M79 84 l0 9"/>
+                <!-- shoulders / body -->
+                <path d="M30 192 q6 -54 40 -56 q34 2 40 56"/>
+                <!-- left arm raised, hand fixing the bun -->
+                <path d="M46 130 C 30 96 42 54 62 38"/>
+                <!-- right arm holding a hand mirror up to her face -->
+                <path d="M96 122 q16 -8 16 -31"/>
+                <circle cx="112" cy="66" r="11"/>
+                <path d="M112 77 l0 14"/>
+                <!-- ===== ABIN (right): combing his hair ===== -->
+                <!-- tousled hair + flicks -->
+                <path d="M160 56 q3 -31 22 -31 q19 0 22 31"/>
+                <path d="M170 30 l2 -8 M182 26 l0 -9 M194 30 l3 -8"/>
+                <!-- head -->
+                <circle cx="182" cy="60" r="25"/>
+                <!-- eyes + smile -->
+                <circle class="ink-fill" cx="174" cy="60" r="2.5"/>
+                <circle class="ink-fill" cx="192" cy="60" r="2.5"/>
+                <path d="M172 69 q11 8 22 0"/>
+                <!-- neck -->
+                <path d="M175 84 l0 9 M191 84 l0 9"/>
+                <!-- shoulders / body -->
+                <path d="M142 192 q6 -54 40 -56 q34 2 40 56"/>
+                <!-- left arm relaxed down -->
+                <path d="M158 132 q9 16 4 34"/>
+                <!-- right arm raised, combing his hair -->
+                <path d="M214 128 C 232 92 224 52 200 40"/>
+                <!-- comb + teeth -->
+                <path d="M188 30 l18 -6 l3 8 l-18 6 Z"/>
+                <path d="M192 36 l-2 5 M197 35 l-2 5 M201 34 l-2 5 M205 33 l-2 5"/>
+              </svg>
+              <figcaption class="karli-label">Karli + Abin</figcaption>
+            </figure>
+          </div>
+
+          <!-- minuto a minuto · programa oficial -->
+          <div class="agenda-head" data-sr>
+            <p class="eyebrow">Minuto a minuto · 3 días</p>
+            <p class="agenda-head__title">Un día menos experience</p>
+            <p class="agenda-head__sub">Programa oficial del evento</p>
+          </div>
+
+          <div class="agenda-pre" data-sr>
+            <p class="agenda-pre__title">Antes de tu evento</p>
+            <ul class="agenda-pre__list">
+              <li>Sesión de calentamiento con Julio &amp; Mariedva — <em>“Vístete para triunfar”</em>.</li>
+              <li>Ver el tutorial de ManyChat e implementarlo.</li>
+              <li><a class="agenda-pre__link" href="https://symplementeventas.typeform.com/to/ewyP0hT8" target="_blank" rel="noopener">Completa el formulario de registro<svg class="agenda-pre__link-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>.</li>
+            </ul>
+          </div>
+
+          <!-- day tabs -->
+          <div class="tabs" data-tabs data-sr>
+            <div class="tabs__nav" role="tablist" aria-label="Días del evento">
+              <button class="tabs__btn is-active" role="tab" aria-selected="true" data-tab="d1">Martes 28</button>
+              <button class="tabs__btn" role="tab" aria-selected="false" data-tab="d2">Miércoles 29</button>
+              <button class="tabs__btn" role="tab" aria-selected="false" data-tab="d3">Jueves 30</button>
+            </div>
+            <div class="tabs__panels">
+              <div class="tabs__panel is-active" role="tabpanel" data-panel="d1">
+                <p class="agenda__theme"><span class="agenda__theme-day">Día 1</span> Guiones memorables para ganar seguidores</p>
+                <ul class="agenda">
+                  <li><span>9:30 am</span> Check in - Validación e ingreso</li>
+                  <li><span>10:00 am</span> Actualización de algoritmo</li>
+                  <li><span>11:00 am</span> Rayos X en vivo</li>
+                  <li><span>12:00 pm</span> Break</li>
+                  <li><span>12:15 pm</span> Guiones memorables | Story inside con JulioIero</li>
+                  <li><span>1:30 pm</span> Grabación</li>
+                  <li><span>2:30 pm</span> Comida</li>
+                  <li><span>4:00 pm</span> Final del día</li>
+                </ul>
+                <p class="agenda__note">Te recomiendo llegar desayunado. En lugar tendremos coffe break :)</p>
+              </div>
+              <div class="tabs__panel" role="tabpanel" data-panel="d2" hidden>
+                <p class="agenda__theme"><span class="agenda__theme-day">Día 2</span> Formatos únicos para generar prospectos</p>
+                <ul class="agenda">
+                  <li><span>9:30 am</span> Check in - Validación e ingreso</li>
+                  <li><span>10:00 am</span> Formatos memorables con Alonso Artega</li>
+                  <li><span>11:00 am</span> Creación de guiones memorables</li>
+                  <li><span>12:00 pm</span> Break</li>
+                  <li><span>12:15 pm</span> Grabación</li>
+                  <li><span>2:30 pm</span> Final del evento</li>
+                </ul>
+                <p class="agenda__note"><strong>Después del evento:</strong> Tarde libre.</p>
+                <p class="agenda__note"><strong>Tarea del día 2:</strong> De todos los videos que grabes en el día 2, deberás llevar 1 editado para el día 3. NO LO SUBAS A REDES aún, eso lo haremos juntos el día 3.</p>
+                <div class="xokol">
+                  <svg class="xokol__star" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01L12 2z" />
+                  </svg>
+                  <div class="xokol__body">
+                    <p class="xokol__title">Un planecito: 6:00 pm</p>
+                    <p>
+                      A mi hermano y socio le encanta comer, e hizo una
+                      reservación para una degustación en un restaurante loquísimo.
+                    </p>
+                    <p>
+                      La degustación tiene una inversión de
+                      <strong>$2,500 mxn</strong> x persona.<br />
+                      Si quieres ir, es necesario pagar tu lugar con anticipación
+                      para añadirte a la reserva.<br />
+                      El restaurante se llama
+                      <a href="https://maps.app.goo.gl/cpeXPuYPJiY9bZne7" target="_blank" rel="noopener"><strong>Xokol</strong></a>
+                      por si lo quieres buscar.
+                    </p>
+                    <p class="xokol__foot">
+                      No es OBLIGATORIO, pero si quieres ir y convivir un rato
+                      está bueno :)
+                    </p>
+                    <p class="xokol__foot" style="font-size: 14.32px;">
+                      Tienes hasta el 15 de Julio para confimar tu lugar (o hasta agotar existencias)<br />
+                      Si quieres ir, hay que avisar en tu formulario de asistencia (eso no garantiza tu cupo, el equipo te contactará para poder avisarte si aún hay lugar o ya no)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__panel" role="tabpanel" data-panel="d3" hidden>
+                <p class="agenda__theme"><span class="agenda__theme-day">Día 3</span> Convierte cualquier cliente en uno calificado</p>
+                <ul class="agenda">
+                  <li><span>9:30 am</span> Check in - Validación e ingreso</li>
+                  <li><span>11:00 am</span> Convierte cualquier cliente en uno calificado</li>
+                  <li><span>1:00 pm</span> Break</li>
+                  <li><span>1:15 pm</span> Premiación</li>
+                  <li><span>2:15 pm</span> Q &amp; A</li>
+                  <li><span>3:00 pm</span> Comida de clausura</li>
+                  <li><span>4:30 pm</span> Final</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p class="agenda-foot" data-sr>Un día menos experience · Programa sujeto a ajustes</p>
+
+        </div>
+      </section>
+
+      <!-- ======================= 9 · HOSPEDAJE (VIP collapsible + recomendación general) ======================= -->
+      <section class="section hotel" id="hotel" aria-labelledby="ho-title">
+        <div class="section__inner">
+
+          <p class="eyebrow" data-sr>¿Dónde me recomiendas hospedarme?</p>
+          <h2 class="section__title" id="ho-title" data-sr>
+            Cualquier hotel cerca de la locación es una buena idea.
+          </h2>
+          <p class="lead" data-sr>Cómo por ejemplo:</p>
+          <div class="hotel__nearby-row">
+            <ul class="hotel__nearby" data-sr>
+              <li><a href="https://maps.app.goo.gl/vd26241GYscaSNxG7" target="_blank" rel="noopener">Holiday Inn Express Guadalajara Aeropuerto by IHG</a></li>
+              <li><a href="https://maps.app.goo.gl/Rt2iv3wEkuEKe8838" target="_blank" rel="noopener">City Express by Marriott Guadalajara Aeropuerto</a></li>
+              <li><a href="https://maps.app.goo.gl/SBnMVoMwRVNEUeJe9" target="_blank" rel="noopener">Ramada Encore by Wyndham Guadalajara Aeropuerto</a></li>
+            </ul>
+            <!-- hotelito: edificio con ventanas, banderín y toldo -->
+            <figure class="ink-doodle hotel__doodle" data-sr aria-hidden="true">
+              <svg viewBox="0 0 132 154" fill="none">
+                <!-- cornisa + cuerpo -->
+                <path d="M16 44 l100 0"/>
+                <path d="M24 44 l84 0 l0 106 l-84 0 Z"/>
+                <!-- banderín -->
+                <path d="M66 44 l0 -22"/>
+                <path d="M66 22 l19 5 l-19 6 Z"/>
+                <!-- ventanas: fila 1 -->
+                <path d="M35 58 l16 0 l0 15 l-16 0 Z"/>
+                <path d="M58 58 l16 0 l0 15 l-16 0 Z"/>
+                <path d="M81 58 l16 0 l0 15 l-16 0 Z"/>
+                <!-- ventanas: fila 2 -->
+                <path d="M35 83 l16 0 l0 15 l-16 0 Z"/>
+                <path d="M58 83 l16 0 l0 15 l-16 0 Z"/>
+                <path d="M81 83 l16 0 l0 15 l-16 0 Z"/>
+                <!-- ventanas laterales + puerta al centro -->
+                <path d="M35 108 l16 0 l0 15 l-16 0 Z"/>
+                <path d="M81 108 l16 0 l0 15 l-16 0 Z"/>
+                <!-- toldo -->
+                <path d="M53 112 l26 0 l-4 -9 l-18 0 Z"/>
+                <!-- puerta -->
+                <path d="M58 112 l16 0 l0 38 l-16 0 Z"/>
+                <path d="M66 112 l0 38"/>
+                <circle class="ink-fill" cx="62" cy="132" r="1.6"/>
+              </svg>
+            </figure>
+          </div>
+          <p class="hotel__vip-pointer" data-sr>Peeeeeero, si yo fuera tú, me quedaría en uno de los hoteles de mi amigo y mentor Brando Angulo.</p>
+          <div class="hotel__vip-arrow" data-sr aria-hidden="true">
+            <svg viewBox="0 0 24 40" fill="none">
+              <path d="M12 3 L12 33 M5 26 L12 34 L19 26" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- oferta exclusiva VIP / Un día menos — visible siempre (ya no es desplegable) -->
+          <div class="vip-card vip-card--static">
+            <div class="vip-card__body">
+              <div class="hotel__ctas">
+                <a class="hotel__btn" data-magnetic href="https://us2.cloudbeds.com/es/reservation/VvuU15?currency=mxn&amp;_gl=1*1lzohy0*_gcl_au*MTkwNjA1OTMyLjE3NzgxNjkzMDI." target="_blank" rel="noopener">
+                  <span class="hotel__btn-text">
+                    <span class="hotel__btn-kicker">Reservar en</span>
+                    <span class="hotel__btn-name">Vendome</span>
+                  </span>
+                  <svg class="hotel__btn-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+                <a class="hotel__btn" data-magnetic href="https://us2.cloudbeds.com/reservation/7MH7my?promo=UNDIAMENOS2026" target="_blank" rel="noopener">
+                  <span class="hotel__btn-text">
+                    <span class="hotel__btn-kicker">Reservar en</span>
+                    <span class="hotel__btn-name">Stays</span>
+                  </span>
+                  <svg class="hotel__btn-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="hotel__map vip-card__map">
+                <svg viewBox="0 0 400 300" role="img" aria-label="Mapa de Guadalajara con la zona recomendada y el lugar del evento" data-map>
+                  <defs>
+                    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+                      <path d="M28 0H0V28" fill="none" stroke="#4a7875" stroke-opacity="0.18" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect x="0" y="0" width="400" height="300" fill="url(#grid)"/>
+                  <!-- route: el transporte sale de Stays → Vendome → Terrania -->
+                  <path class="map__route" d="M78,96 C128,112 150,122 188,138 C238,162 262,188 308,214" fill="none" stroke="#f6f0e0" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/>
+                  <!-- traveling dot rides the route on scroll -->
+                  <g class="map__traveler" data-map-dot>
+                    <circle r="12" fill="#f6f0e0" fill-opacity="0.22"/>
+                    <circle r="5.5" fill="#f6f0e0"/>
+                  </g>
+                  <!-- parada 1 · Stays (sale el transporte) -->
+                  <g class="map__pin" data-pin>
+                    <circle cx="78" cy="96" r="9" fill="#f6f0e0"/>
+                    <circle cx="78" cy="96" r="20" fill="none" stroke="#f6f0e0" stroke-opacity="0.5" stroke-width="1.5"/>
+                    <text x="78" y="78" text-anchor="middle" class="map__label">1 · Stays</text>
+                  </g>
+                  <!-- parada 2 · Vendome -->
+                  <g class="map__pin" data-pin>
+                    <circle cx="188" cy="138" r="9" fill="#f6f0e0"/>
+                    <circle cx="188" cy="138" r="20" fill="none" stroke="#f6f0e0" stroke-opacity="0.5" stroke-width="1.5"/>
+                    <text x="188" y="167" text-anchor="middle" class="map__label">2 · Vendome</text>
+                  </g>
+                  <!-- parada 3 · Terrania (el evento) -->
+                  <g class="map__pin" data-pin>
+                    <circle cx="308" cy="214" r="9" fill="#4a7875"/>
+                    <circle cx="308" cy="214" r="20" fill="none" stroke="#4a7875" stroke-opacity="0.6" stroke-width="1.5"/>
+                    <text x="308" y="244" text-anchor="middle" class="map__label">3 · Terrania (tu evento)</text>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="hotel__code">
+                <span class="hotel__code-label">Tu código de descuento es</span>
+                <span class="hotel__code-value" data-code>UNDIAMENOS2026</span>
+              </div>
+
+              <p>Y OBVIO tienes un mejor precio, solo es importante que pongas el código que te dejo aquí:)</p>
+
+              <div class="vip-card__note">
+                <p>Estos últimos hoteles están un poco lejos del lugar del evento, pero no te apures.</p>
+                <p>Si estás en el programa:</p>
+                <ul class="vip-card__programs">
+                  <li>VIP</li>
+                  <li>Un día menos con Julio</li>
+                  <li>Symple team</li>
+                </ul>
+                <p>Contaremos con transporte especial para ustedes, para que no se preocupen por la distancia :) El bus los recoge y los regresa.</p>
+                <p>Y si no estás en alguno de estos programas, la inversión del transporte será de 50 usd x persona.</p>
+                <p>Solo tendrás que confirmarnos si lo requieres al llenar tu formulario de asistencia :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================= 10 · FAQ ======================= -->
+      <section class="section faqs" id="faq" aria-labelledby="faq-title">
+        <div class="section__inner">
+          <p class="eyebrow" data-sr>Preguntas frecuentes</p>
+          <h2 class="section__title" id="faq-title" data-sr>Lo que sueles preguntar.<svg class="faq-q" viewBox="0 0 30 46" aria-hidden="true" data-doodle><path pathLength="1" d="M5 14 C5 3 26 3 25 15 C24 24 15 22 15 31 M15 39 L15 41"/></svg></h2>
+          <div class="faq" data-accordion>
+            <details class="faq__item" data-sr>
+              <summary>¿Si llego temprano me toca un mejor lugar?</summary>
+              <div class="faq__body"><p>Al hacer tu check in, recibirás un gafete, ahí estará tu nombre, el programa en el que estás y la zona asignada para poder sentarte.</p></div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Puedo llevar un acompañante?</summary>
+              <div class="faq__body"><p>100% , pero deberás avisarnos para validar si aún hay espacios.<br />Te pediremos su nombre completo y correo.<br />Y deberá cubrirse el costo operativo por persona extra que es de $500 usd.</p></div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Puedo grabar el evento?</summary>
+              <div class="faq__body">
+                <p class="faq__no">No.</p>
+                <details class="faq__sub" data-faq-sub>
+                  <summary>¿Por qué?</summary>
+                  <div class="faq__body">
+                    <p>
+                      <span class="doodle">Era una bromita<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4" /></svg></span> jejej, si puedes grabar, y si nos
+                      etiquetas, sería muy top<br />
+                      Te dejo mi IG por si no lo tienes
+                      <a href="https://instagram.com/julioiero/" target="_blank" rel="noopener">@julioiero</a>.
+                    </p>
+                    <!-- sí se puede grabar: la camarita con su palomita -->
+                    <span class="ink-doodle faq__cam" aria-hidden="true"><svg viewBox="0 0 84 56" fill="none"><path d="M6 22 l44 0 l0 28 l-44 0 Z"/><path d="M16 22 l4 -8 l14 0 l4 8"/><circle cx="28" cy="36" r="9"/><circle cx="28" cy="36" r="3.5"/><circle class="ink-fill" cx="12" cy="28" r="1.5"/><path d="M58 34 l8 9 l14 -21"/></svg></span>
+                  </div>
+                </details>
+              </div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Qué debo llevar?</summary>
+              <div class="faq__body">
+                <p class="faq__intro">Recuerda que vienes a una implementación para poder crear contenido, necesitarás lo siguiente:</p>
+                <ul class="faq__checklist">
+                  <li>Algo con que grabar (celular CON MEMORIA Y PILA, DJI o cámara, lo que uses).</li>
+                  <li>Micrófonos cargados.</li>
+                  <li>Tripié.</li>
+                  <li>Tu computadora CON PILA OBLIGATORIO</li>
+                </ul>
+              </div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Esto me ayudará a vender más?</summary>
+              <div class="faq__body"><p>Si :)</p></div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Qué ropa me llevo para las fotos?</summary>
+              <div class="faq__body faq__dresscode">
+                <blockquote class="faq__quote">
+                  <p>Una amiga y clienta VIP diría <em>“vístete para triunfar”</em>.</p>
+                  <cite>La frase es de Mariedva, y la conocerás en el evento.</cite>
+                </blockquote>
+                <p class="faq__colors-lead">Los colores permitidos son:</p>
+                <ul class="faq__swatches" aria-label="Colores permitidos">
+                  <li><span class="faq__swatch faq__swatch--white" aria-hidden="true"></span>Blanco</li>
+                  <li><span class="faq__swatch faq__swatch--black" aria-hidden="true"></span>Negro</li>
+                  <li><span class="faq__swatch faq__swatch--green" aria-hidden="true"></span>Verde <small>Pantone 19-6027 tcx</small></li>
+                </ul>
+                <p class="faq__colors-note">Dejo el Pantone para las mujeres, pero si eres hombre, cualquier verde que te quede bien está perfecto.</p>
+                <p class="faq__note">El dresscode es <strong>smart casual / business casual</strong>.</p>
+              </div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Todos los videos que haga ahí se van hacer virales?</summary>
+              <div class="faq__body"><p>No :)</p></div>
+            </details>
+            <details class="faq__item" data-sr>
+              <summary>¿Y si no puedo ir presencialmente?</summary>
+              <div class="faq__body">
+                <p>Tendremos también una opción digital, para ti, tu equipo, tu gato, tus tías o quién tu quieras, la inversión será solo de <strong>$147 USD</strong> por los tres días.</p>
+                <p>Así lo puedes ver desde tu casa, oficina o playa</p>
+                <p>Y obvio, te mandamos la grabación ya que terminen los 3 días:)</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- qué incluye — framed callout (crayon rounded square, like the manifesto) -->
+      <div class="que-incluye" id="que-incluye">
+        <div class="section__inner">
+          <div class="que-incluye__frame">
+            <svg class="crayon-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" data-crayon>
+              <rect x="1.5" y="1.5" width="97" height="97" rx="3" ry="4" vector-effect="non-scaling-stroke" />
+            </svg>
+            <p class="que-incluye__title" data-sr>Y entonces...<br />¿qué incluye la experiencia?</p>
+            <a class="que-incluye__btn" data-sr data-magnetic href="/que-incluye.pdf" target="_blank" rel="noopener" download="UN DIA MENOS EXPERIENCE.pdf">
+              Pícale aquí para descargarlo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================= 11 · CTA FINAL ======================= -->
+      <section class="section cta-final" id="reservar" aria-labelledby="cta-title">
+        <div class="section__inner cta-final__inner">
+          <img class="cta-final__mark" src="/assets/brand/isotipo-1.svg" alt="" aria-hidden="true" data-sr />
+          <h2 class="section__title cta-final__title" id="cta-title" data-sr>
+            Nos vemos en UN DÍA MENOS EXPERIENCE
+          </h2>
+          <p class="lead" data-sr>
+            Tu lugar es intransferible y necesitamos que confirmes tu asistencia
+            lo antes posible.<br />
+            Queremos darte una experiencia TOP y que te lleves mucho valor.
+          </p>
+          <p class="cta-final__gift" data-sr>
+            Igual, tendremos unos regalitos para ti, si mi equipo te manda
+            mensaje, contéstale (luego <span class="doodle">Karlita se pone triste<svg class="doodle__mark doodle__mark--underline" viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" data-doodle><path pathLength="1" d="M2 7 C22 2 44 11 66 5 C80 1 92 8 98 4" /></svg></span> por eso, y nuestra
+            event planner se estresa por los lugares).
+          </p>
+
+          <!-- Karli waiting for the client's reply (phone + chat bubble) -->
+          <figure class="karli-wait ink-doodle" data-sr role="img" aria-label="Karli esperando tu respuesta">
+            <svg viewBox="0 0 172 184" fill="none">
+              <!-- waiting chat bubble with "..." -->
+              <path d="M118 30 q26 0 26 19 q0 19 -26 19 q-5 0 -10 -2 l-11 6 l3 -10 q-8 -5 -8 -13 q0 -19 26 -19 Z"/>
+              <circle class="ink-fill" cx="106" cy="49" r="2"/>
+              <circle class="ink-fill" cx="118" cy="49" r="2"/>
+              <circle class="ink-fill" cx="130" cy="49" r="2"/>
+              <!-- bun + hair -->
+              <circle cx="70" cy="34" r="6.5"/>
+              <path d="M50 60 q4 -25 20 -26 q17 1 21 26"/>
+              <!-- head -->
+              <circle cx="70" cy="68" r="24"/>
+              <!-- eyes + happy smile (waiting cheerfully for your reply) -->
+              <circle class="ink-fill" cx="62" cy="70" r="2.3"/>
+              <circle class="ink-fill" cx="78" cy="70" r="2.3"/>
+              <path d="M62 79 q8 7 16 0"/>
+              <!-- headset band + ear cup + mic boom -->
+              <path d="M44 68 q2 -32 26 -33 q24 1 26 33"/>
+              <path d="M43 65 q-5 1 -4 8 q1 6 7 6"/>
+              <path d="M96 68 q5 10 -4 17 q-7 5 -14 5"/>
+              <circle class="ink-fill" cx="76" cy="92" r="2.3"/>
+              <!-- neck + shoulders -->
+              <path d="M63 92 l0 7 M77 92 l0 7"/>
+              <path d="M30 184 q4 -50 40 -52 q36 2 40 52"/>
+              <!-- bow at the collar -->
+              <path d="M70 104 l-8 -5 l0 11 Z"/>
+              <path d="M70 104 l8 -5 l0 11 Z"/>
+              <!-- both arms cradling the phone -->
+              <path d="M40 150 q2 -22 28 -26"/>
+              <path d="M100 150 q-2 -22 -28 -26"/>
+              <!-- phone held in front -->
+              <path d="M58 120 l24 0 q4 0 4 4 l0 30 q0 4 -4 4 l-24 0 q-4 0 -4 -4 l0 -30 q0 -4 4 -4 Z"/>
+              <path d="M62 127 l16 0"/>
+            </svg>
+          </figure>
+          <a class="btn btn--cta btn--hero cta-final__btn" data-magnetic data-pulse href="https://wa.me/5217751246135?text=Holaa%20vi%20la%20historia%20de%20Julio%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20del%20evento" target="_blank" rel="noopener" data-sr>
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.16c-.25.69-1.44 1.32-1.98 1.37-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.25-.29.55-.36.73-.36.18 0 .37 0 .53.01.17.01.4-.06.62.48.25.6.85 2.07.92 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.02 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.65-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.69-.18 1.38Z"/>
+            </svg>
+            Confirmar mi asistencia
+          </a>
+          <p class="cta-final__ig" data-sr>
+            <a href="https://instagram.com/julioiero" target="_blank" rel="noopener">@julioiero</a>
+          </p>
+          <p class="cta-final__sign" data-sr>Atte: Julio Iero.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- hand-drawn (crayon) edge filter -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="crayon" x="-12%" y="-12%" width="124%" height="124%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.013 0.02" numOctaves="3" seed="5" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <!-- gentler hand-drawn wobble for large display text (the headline) -->
+        <filter id="crayon-soft" x="-5%" y="-5%" width="110%" height="110%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.011 0.014" numOctaves="2" seed="4" result="n1" />
+          <feDisplacementMap in="SourceGraphic" in2="n1" scale="4" xChannelSelector="R" yChannelSelector="G" result="wob" />
+          <!-- fine grain over the fill so it reads like a waxy crayon stroke -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="8" result="grain" />
+          <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0" result="grainA" />
+          <feComposite in="grainA" in2="wob" operator="in" result="grainClip" />
+          <feComposite in="grainClip" in2="wob" operator="over" />
+        </filter>
+        <!-- gentle wobble for the hand-drawn cursor arrow -->
+        <filter id="crayon-nib" x="-30%" y="-30%" width="160%" height="160%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.075" numOctaves="2" seed="6" result="n" />
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
+
+    <!-- lightbox for viralidad screenshots -->
+    <div class="lightbox" data-lightbox-modal hidden>
+      <button class="lightbox__close" data-lightbox-close type="button" aria-label="Cerrar">&times;</button>
+      <img class="lightbox__img" src="" alt="" />
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

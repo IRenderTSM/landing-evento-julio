@@ -1,0 +1,20 @@
+# Build artifacts / deps
+node_modules
+dist
+
+# Source assets that are NOT deployed (optimized + promoted into public/assets per phase)
+media-src
+reference
+inspiration
+
+# Tooling / docs
+.claude
+CLAUDE.md
+README.md
+
+# Legacy root-committed brand files (duplicated under reference/ — not part of the site)
+# Anchored to the repo root so deployed PDFs under public/ are NOT excluded.
+/*.pdf
+/*.zip
+Logo Symple.mp4
+Isotipo_SYMPLE®.ai

@@ -1,0 +1,26 @@
+# Secrets — NUNCA subir
+.env
+.env.local
+*.key
+config.secret.*
+
+# Dependencias
+node_modules/
+
+# Build / sistema
+dist/
+.DS_Store
+*.log
+
+# Vite / Vercel
+.vite/
+.vercel/
+
+# Raw source assets (optimized + promoted into public/assets/ per build phase)
+media-src/
+# Heavy / proprietary brand reference (kept local, not part of the deployed site)
+reference/*.pdf
+# Third-party saved pages used only as design reference
+inspiration/*.html
+
+.vercel
