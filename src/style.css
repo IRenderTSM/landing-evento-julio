@@ -2786,6 +2786,16 @@ a {
   background: var(--cadet-blue);
 }
 .agenda-pre__list em { font-style: italic; color: var(--cadet-blue); }
+/* captura del perfil de IG: al 78% del ancho disponible, tope en su tamaño natural */
+.agenda-pre__ig {
+  display: block;
+  margin-top: 0.7rem;
+  width: 78%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--linen) 12%, transparent);
+}
 /* enlace al formulario: subrayado animado + flecha que se nota al pasar el mouse */
 .agenda-pre__link {
   display: inline-flex;
