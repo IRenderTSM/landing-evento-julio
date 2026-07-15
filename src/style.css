@@ -2804,6 +2804,32 @@ a {
   .agenda-pre__reel { transition: none; }
   .agenda-pre__reel:hover { transform: none; }
 }
+/* relato bajo los reels: misma cursiva que los <em> de la lista (Neutral Sans) */
+.agenda-pre__story {
+  margin-bottom: 1.1rem;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: lowercase;
+  color: var(--cadet-blue);
+}
+/* todo en minuscula salvo la inicial de cada parrafo */
+.agenda-pre__story p::first-letter { text-transform: uppercase; }
+/* titulo que introduce los ultimos pasos previos al evento */
+.agenda-pre__lead {
+  margin: 1.7rem 0 0.9rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.6vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--linen);
+}
+.agenda-pre__story p + p { margin-top: 0.75rem; }
 .agenda-pre__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
 .agenda-pre__list li {
   position: relative;
