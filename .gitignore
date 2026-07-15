@@ -16,6 +16,9 @@ dist/
 .vite/
 .vercel/
 
+# Ajustes locales de Claude Code (permisos por máquina)
+.claude/settings.local.json
+
 # Raw source assets (optimized + promoted into public/assets/ per build phase)
 media-src/
 # Heavy / proprietary brand reference (kept local, not part of the deployed site)
