@@ -3182,6 +3182,14 @@ a {
   height: auto;
   margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
 }
+/* flyer de ponentes sobre el titulo de cierre (cuadrado 1080x1080) */
+.cta-final__flyer {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
 .cta-final__title { max-width: none; }
 .cta-final .lead { margin-inline: auto; text-align: center; }
 .cta-final__gift {
