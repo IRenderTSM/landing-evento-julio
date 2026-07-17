@@ -15,6 +15,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         gracias: 'gracias.html',
+        graciasdigital: 'graciasdigital.html',
       },
     },
   },
