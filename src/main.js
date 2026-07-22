@@ -481,6 +481,42 @@ if (modal) {
   })
 }
 
+/* ---------------- Tutorial ManyChat: video lightbox ---------------- */
+const videoModal = document.querySelector('[data-video-modal]')
+if (videoModal) {
+  const player = videoModal.querySelector('[data-video-player]')
+  let vCloseTimer = 0
+  const openVideo = (src) => {
+    clearTimeout(vCloseTimer)
+    // el video solo se descarga aqui, al abrir el pop-up
+    if (player.getAttribute('src') !== src) player.setAttribute('src', src)
+    videoModal.hidden = false
+    document.body.style.overflow = 'hidden'
+    requestAnimationFrame(() => requestAnimationFrame(() => videoModal.classList.add('is-open')))
+    player.play().catch(() => {}) // si el navegador bloquea el autoplay, quedan los controles
+  }
+  const closeVideo = () => {
+    videoModal.classList.remove('is-open')
+    document.body.style.overflow = ''
+    player.pause()
+    vCloseTimer = setTimeout(() => {
+      videoModal.hidden = true
+      player.removeAttribute('src') // corta la descarga al cerrar
+      player.load()
+    }, 300)
+  }
+  document.querySelectorAll('[data-video-open]').forEach((btn) => {
+    btn.addEventListener('click', () => openVideo(btn.getAttribute('data-video-src')))
+  })
+  videoModal.querySelector('[data-video-close]').addEventListener('click', closeVideo)
+  videoModal.addEventListener('click', (e) => {
+    if (e.target === videoModal) closeVideo()
+  })
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !videoModal.hidden) closeVideo()
+  })
+}
+
 /* ---------------- Logística: day tabs ---------------- */
 document.querySelectorAll('[data-tabs]').forEach((tabs) => {
   const nav = tabs.querySelector('.tabs__nav')

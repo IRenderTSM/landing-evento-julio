@@ -2849,6 +2849,43 @@ a {
   background: var(--cadet-blue);
 }
 .agenda-pre__list em { font-style: italic; color: var(--cadet-blue); }
+/* boton que abre el tutorial: hereda el subrayado animado de __link,
+   pero hay que quitarle el chrome por defecto del <button> */
+.agenda-pre__video {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.agenda-pre__video-play {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  color: var(--cadet-blue);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.agenda-pre__video:hover .agenda-pre__video-play,
+.agenda-pre__video:focus-visible .agenda-pre__video-play {
+  color: var(--linen);
+  transform: scale(1.1);
+}
+/* reproductor dentro del pop-up */
+.video-modal__player {
+  width: min(92vw, 900px);
+  max-height: 86vh;
+  border-radius: 14px;
+  background: #000;
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8);
+  transform: scale(0.96);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+}
+.video-modal.is-open .video-modal__player { transform: scale(1); opacity: 1; }
 /* captura del perfil de IG: al 78% del ancho disponible, tope en su tamaño natural */
 .agenda-pre__ig {
   display: block;

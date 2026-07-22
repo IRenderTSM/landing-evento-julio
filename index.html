@@ -980,7 +980,7 @@
             </ul>
             <h3 class="agenda-pre__lead">Y por último, me gustaría que vieras lo siguiente antes del evento</h3>
             <ul class="agenda-pre__list">
-              <li>Ver el tutorial de ManyChat e implementarlo.</li>
+              <li><button class="agenda-pre__link agenda-pre__video" type="button" data-video-open data-video-src="/assets/media/manychat/manychat-oscar.mp4">Ver el tutorial de ManyChat e implementarlo<svg class="agenda-pre__video-play" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M10 8.5 L16 12 L10 15.5 Z" fill="currentColor"/></svg></button>.</li>
               <li><a class="agenda-pre__link" href="https://symplementeventas.typeform.com/to/ewyP0hT8" target="_blank" rel="noopener">Contarnos un poco más de ti en este formulario<svg class="agenda-pre__link-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>.</li>
             </ul>
           </div>
@@ -1399,6 +1399,11 @@
     <div class="lightbox" data-lightbox-modal hidden>
       <button class="lightbox__close" data-lightbox-close type="button" aria-label="Cerrar">&times;</button>
       <img class="lightbox__img" src="" alt="" />
+    </div>
+
+    <div class="lightbox video-modal" data-video-modal hidden>
+      <button class="lightbox__close" data-video-close type="button" aria-label="Cerrar">&times;</button>
+      <video class="video-modal__player" data-video-player controls playsinline preload="none"></video>
     </div>
 
     <script type="module" src="/src/main.js"></script>
