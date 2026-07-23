@@ -2970,6 +2970,10 @@ a {
   text-decoration-color: color-mix(in srgb, #f5dd42 75%, transparent);
 }
 .xokol__body > .xokol__title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6em;
   font-family: var(--font-body);
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -2977,6 +2981,20 @@ a {
   font-size: clamp(0.72rem, 2vw, 0.82rem);
   color: #f5dd42;
   margin-bottom: 0.45rem;
+}
+/* sello SOLD OUT junto al horario del planecito */
+.xokol__soldout {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.15rem, 4.5vw, 1.7rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #f5dd42;
+  padding: 0.22em 0.6em;
+  border: 2px solid #f5dd42;
+  border-radius: 8px;
+  transform: rotate(-4deg);
 }
 .xokol__body > .xokol__foot {
   font-style: italic;
