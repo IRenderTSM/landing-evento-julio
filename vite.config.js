@@ -7,6 +7,11 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   root: '.',
   publicDir: 'public',
+  // Usa el puerto que asigne el entorno (PORT); si no, el 5173 por defecto.
+  // Solo afecta al servidor de desarrollo — el build de producción lo ignora.
+  server: {
+    port: process.env.PORT ? Number(process.env.PORT) : 5173,
+  },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
