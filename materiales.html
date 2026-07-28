@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#123940" />
+    <meta name="robots" content="noindex" />
+    <title>Materiales del evento · Un día menos experience — Julio Iero</title>
+    <meta
+      name="description"
+      content="Materiales y enlaces del evento Un día menos experience — Julio Iero."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/brand/isotipo-1.svg" />
+
+    <!-- precarga de las fuentes críticas (titulares + cuerpo) -->
+    <link rel="preload" href="/assets/brand/symple-fonts-aeoniktrial/AeonikTRIAL-Bold.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/assets/brand/symple-fonts-neutralsans/NeutralSans-Regular-BF673417d506f9f.otf" as="font" type="font/otf" crossorigin />
+
+    <!-- mismo sistema de diseño que la landing -->
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <!-- ajustes propios de esta página (respetan la paleta de 5 colores) -->
+    <style>
+      body { background: var(--dark-green); color: var(--linen); min-height: 100dvh; }
+      .materiales {
+        max-width: 42rem;
+        margin-inline: auto;
+        padding: clamp(6rem, 16vh, 9rem) var(--pad) clamp(3rem, 10vh, 5rem);
+      }
+      .materiales__eyebrow {
+        font-family: var(--font-body);
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--cadet-blue);
+        margin-bottom: 0.6rem;
+      }
+      .materiales__title {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: clamp(2rem, 6vw, 3.2rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        color: var(--linen);
+        margin-bottom: clamp(1.6rem, 5vw, 2.6rem);
+      }
+      /* lista de enlaces — cada uno se ve como una fila/tarjeta */
+      .materiales__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.8rem; }
+      .materiales__list a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.05rem 1.3rem;
+        border-radius: 14px;
+        text-decoration: none;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: clamp(1rem, 2.6vw, 1.12rem);
+        color: var(--linen);
+        background: color-mix(in srgb, var(--cadet-blue) 14%, transparent);
+        border: 1px solid color-mix(in srgb, var(--linen) 12%, transparent);
+        transition: background 0.22s ease, border-color 0.22s ease, transform 0.22s ease;
+      }
+      .materiales__list a:hover,
+      .materiales__list a:focus-visible {
+        background: color-mix(in srgb, var(--cadet-blue) 26%, transparent);
+        border-color: color-mix(in srgb, var(--cadet-blue) 60%, transparent);
+        transform: translateY(-2px);
+      }
+      .materiales__list a svg { width: 1.15em; height: 1.15em; flex: none; color: var(--cadet-blue); }
+      /* placeholder mientras no hay enlaces cargados */
+      .materiales__empty {
+        font-family: var(--font-body);
+        font-style: italic;
+        color: color-mix(in srgb, var(--linen) 60%, var(--cadet-blue));
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ NAV (logo + menú, vuelve a la landing) ============ -->
+    <header class="nav" data-nav>
+      <a class="nav__logo" href="/" aria-label="Symple Ventas — inicio">
+        <img src="/assets/brand/symple-wordmark-white.svg" alt="Symple" />
+      </a>
+      <nav class="nav__menu" aria-label="Ir a una sección">
+        <a href="/index.html#itinerario">Itinerario del evento</a>
+        <a href="/index.html#lugar">¿Dónde será el evento?</a>
+        <a href="/index.html#logistica">¿Cuál es la logística?</a>
+        <a href="/index.html#hotel">¿Dónde hospedarme?</a>
+        <a href="/index.html#que-incluye">¿Qué incluye la experiencia?</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="materiales" aria-labelledby="materiales-title">
+        <p class="materiales__eyebrow">Un día menos experience</p>
+        <h1 class="materiales__title" id="materiales-title">Materiales del evento</h1>
+
+        <!-- ====== LISTA DE ENLACES ======
+             Cada enlace es un <li> como el ejemplo comentado de abajo.
+             Cuando me pases los links, los añado aquí. -->
+        <ul class="materiales__list">
+          <!--
+          <li>
+            <a href="URL_DEL_ENLACE" target="_blank" rel="noopener">
+              Nombre del material
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </li>
+          -->
+          <li class="materiales__empty" aria-hidden="true">Aún no hay materiales cargados.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

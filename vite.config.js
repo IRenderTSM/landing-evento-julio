@@ -21,6 +21,7 @@ export default defineConfig({
         main: 'index.html',
         gracias: 'gracias.html',
         graciasdigital: 'graciasdigital.html',
+        materiales: 'materiales.html',
       },
     },
   },
