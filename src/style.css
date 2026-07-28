@@ -2705,6 +2705,13 @@ a {
   color: color-mix(in srgb, var(--linen) 78%, var(--cadet-blue));
 }
 .agenda__note strong { color: var(--linen); }
+/* boton de materiales al final del dia */
+.agenda__materiales {
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
 
 /* per-day theme heading inside a tab panel */
 .agenda__theme {
