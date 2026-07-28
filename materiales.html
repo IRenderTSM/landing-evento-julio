@@ -71,12 +71,17 @@
         transform: translateY(-2px);
       }
       .materiales__list a svg { width: 1.15em; height: 1.15em; flex: none; color: var(--cadet-blue); }
-      /* placeholder mientras no hay enlaces cargados */
-      .materiales__empty {
+      /* grupo de enlaces bajo un subtítulo (ej. Transmisión digital: Parte 1 / Parte 2) */
+      .materiales__group-title {
+        margin: 0.6rem 0 0.55rem;
         font-family: var(--font-body);
-        font-style: italic;
-        color: color-mix(in srgb, var(--linen) 60%, var(--cadet-blue));
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--cadet-blue);
       }
+      .materiales__group-links { display: flex; flex-direction: column; gap: 0.8rem; }
     </style>
   </head>
   <body>
@@ -99,19 +104,26 @@
         <p class="materiales__eyebrow">Un día menos experience</p>
         <h1 class="materiales__title" id="materiales-title">Materiales del evento</h1>
 
-        <!-- ====== LISTA DE ENLACES ======
-             Cada enlace es un <li> como el ejemplo comentado de abajo.
-             Cuando me pases los links, los añado aquí. -->
         <ul class="materiales__list">
-          <!--
           <li>
-            <a href="URL_DEL_ENLACE" target="_blank" rel="noopener">
-              Nombre del material
+            <a href="https://app.xmind.com/share/8vVXehxQ?xid=C8iTSRc6" target="_blank" rel="noopener">
+              Xmind — Proceso de creación de contenido
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </li>
-          -->
-          <li class="materiales__empty" aria-hidden="true">Aún no hay materiales cargados.</li>
+          <li class="materiales__group">
+            <p class="materiales__group-title">Transmisión digital · Un día menos experience</p>
+            <div class="materiales__group-links">
+              <a href="https://fathom.video/share/axPX23mUNSx_G8A9z2RsExtRdP_WyCEN" target="_blank" rel="noopener">
+                Parte 1
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://fathom.video/share/J4jzDzoSPMBzgzc8k_LJRzqDy3zt4_YY" target="_blank" rel="noopener">
+                Parte 2
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </li>
         </ul>
       </section>
     </main>

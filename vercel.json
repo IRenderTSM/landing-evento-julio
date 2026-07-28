@@ -3,6 +3,9 @@
   "framework": "vite",
   "buildCommand": "vite build",
   "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/materiales", "destination": "/materiales.html" }
+  ],
   "headers": [
     {
       "source": "/assets/index-(.*)",
