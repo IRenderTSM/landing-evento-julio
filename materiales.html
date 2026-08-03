@@ -92,6 +92,15 @@
         color: var(--cadet-blue);
       }
       .materiales__group-links { display: flex; flex-direction: column; gap: 0.8rem; }
+      /* estado vacío (día sin materiales cargados aún) */
+      .materiales__empty {
+        font-family: var(--font-body);
+        font-style: italic;
+        color: color-mix(in srgb, var(--linen) 55%, var(--cadet-blue));
+      }
+      /* la fecha dentro de cada pestaña, sin margen superior extra */
+      .materiales__tabs { margin-top: clamp(1.6rem, 5vw, 2.4rem); }
+      .materiales__tabs .materiales__day { margin-top: 0; }
     </style>
   </head>
   <body>
@@ -114,66 +123,145 @@
         <p class="materiales__eyebrow">Un día menos experience</p>
         <h1 class="materiales__title" id="materiales-title">Materiales del evento</h1>
 
-        <h2 class="materiales__day">Día 1 - 28 de julio</h2>
-        <ul class="materiales__list">
-          <li>
-            <a href="https://app.xmind.com/share/8vVXehxQ?xid=C8iTSRc6" target="_blank" rel="noopener">
-              Xmind — Proceso de creación de contenido
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </li>
-          <li class="materiales__group">
-            <p class="materiales__group-title">Diapositivas</p>
-            <div class="materiales__group-links">
-              <a href="https://drive.google.com/file/d/12b6xa4D_rAea8gaH4qP1D4p-SilBikHm/view?usp=sharing" target="_blank" rel="noopener">
-                Descarga aquí
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 v11 m0 0 l-4-4 m4 4 l4-4 M5 19 h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </li>
-          <li class="materiales__group">
-            <p class="materiales__group-title">Transmisión digital · Un día menos experience</p>
-            <div class="materiales__group-links">
-              <a href="https://fathom.video/share/axPX23mUNSx_G8A9z2RsExtRdP_WyCEN" target="_blank" rel="noopener">
-                Parte 1
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a href="https://fathom.video/share/J4jzDzoSPMBzgzc8k_LJRzqDy3zt4_YY" target="_blank" rel="noopener">
-                Parte 2
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </li>
-          <li class="materiales__group">
-            <p class="materiales__group-title">Fotos del evento</p>
-            <div class="materiales__group-links">
-              <a href="https://drive.google.com/drive/folders/1iXbnHsO7PvLPDDnAr508vrJyzDKW5v5-?usp=sharing" target="_blank" rel="noopener">
-                Galería
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-            </div>
-          </li>
-        </ul>
+        <div class="tabs materiales__tabs" data-tabs-mat>
+          <div class="tabs__nav" role="tablist" aria-label="Días del evento">
+            <button class="tabs__btn is-active" type="button" role="tab" aria-selected="true" data-tab="d1">Día 1</button>
+            <button class="tabs__btn" type="button" role="tab" aria-selected="false" data-tab="d2">Día 2</button>
+            <button class="tabs__btn" type="button" role="tab" aria-selected="false" data-tab="d3">Día 3</button>
+          </div>
+          <div class="tabs__panels">
 
-        <h2 class="materiales__day">Día 2 - 29 de julio</h2>
-        <ul class="materiales__list">
-          <li>
-            <a href="https://fathom.video/share/uw9FuPazKjQ3a42FLr8WNYc6ByYq3xtr" target="_blank" rel="noopener">
-              Grabación - Transmisión digital
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </li>
-          <li class="materiales__group">
-            <p class="materiales__group-title">Alonso presentación</p>
-            <div class="materiales__group-links">
-              <a href="/assets/docs/alonso-presentacion.pdf" download>
-                Descarga aquí
-                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 v11 m0 0 l-4-4 m4 4 l4-4 M5 19 h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
+            <div class="tabs__panel is-active" role="tabpanel" data-panel="d1">
+              <p class="materiales__day">28 de julio</p>
+              <ul class="materiales__list">
+                <li>
+                  <a href="https://app.xmind.com/share/8vVXehxQ?xid=C8iTSRc6" target="_blank" rel="noopener">
+                    Xmind — Proceso de creación de contenido
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </li>
+                <li class="materiales__group">
+                  <p class="materiales__group-title">Diapositivas</p>
+                  <div class="materiales__group-links">
+                    <a href="https://drive.google.com/file/d/12b6xa4D_rAea8gaH4qP1D4p-SilBikHm/view?usp=sharing" target="_blank" rel="noopener">
+                      Descarga aquí
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 v11 m0 0 l-4-4 m4 4 l4-4 M5 19 h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="materiales__group">
+                  <p class="materiales__group-title">Transmisión digital · Un día menos experience</p>
+                  <div class="materiales__group-links">
+                    <a href="https://fathom.video/share/axPX23mUNSx_G8A9z2RsExtRdP_WyCEN" target="_blank" rel="noopener">
+                      Parte 1
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://fathom.video/share/J4jzDzoSPMBzgzc8k_LJRzqDy3zt4_YY" target="_blank" rel="noopener">
+                      Parte 2
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </li>
+                <li class="materiales__group">
+                  <p class="materiales__group-title">Fotos del evento</p>
+                  <div class="materiales__group-links">
+                    <a href="https://drive.google.com/drive/folders/1iXbnHsO7PvLPDDnAr508vrJyzDKW5v5-?usp=sharing" target="_blank" rel="noopener">
+                      Galería
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-        </ul>
+
+            <div class="tabs__panel" role="tabpanel" data-panel="d2" hidden>
+              <p class="materiales__day">29 de julio</p>
+              <ul class="materiales__list">
+                <li>
+                  <a href="https://fathom.video/share/uw9FuPazKjQ3a42FLr8WNYc6ByYq3xtr" target="_blank" rel="noopener">
+                    Grabación - Transmisión digital
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 L17 7 M9 7 h8 v8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </li>
+                <li class="materiales__group">
+                  <p class="materiales__group-title">Alonso presentación</p>
+                  <div class="materiales__group-links">
+                    <a href="/assets/docs/alonso-presentacion.pdf" download>
+                      Descarga aquí
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 v11 m0 0 l-4-4 m4 4 l4-4 M5 19 h14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__panel" role="tabpanel" data-panel="d3" hidden>
+              <p class="materiales__day">30 de julio</p>
+              <p class="materiales__empty">Aún no hay materiales del Día 3.</p>
+            </div>
+
+          </div>
+        </div>
       </section>
     </main>
+
+    <script>
+      (function () {
+        var tabs = document.querySelector('[data-tabs-mat]');
+        if (!tabs) return;
+        var nav = tabs.querySelector('.tabs__nav');
+        var btns = [].slice.call(tabs.querySelectorAll('.tabs__btn'));
+        var panels = [].slice.call(tabs.querySelectorAll('.tabs__panel'));
+        // píldora deslizante detrás del día activo
+        var pill = document.createElement('span');
+        pill.className = 'tabs__pill';
+        pill.setAttribute('aria-hidden', 'true');
+        nav.prepend(pill);
+        tabs.classList.add('tabs--ready');
+        function activeBtn() {
+          return btns.filter(function (b) { return b.classList.contains('is-active'); })[0] || btns[0];
+        }
+        function movePill(btn) {
+          pill.style.left = btn.offsetLeft + 'px';
+          pill.style.top = btn.offsetTop + 'px';
+          pill.style.width = btn.offsetWidth + 'px';
+          pill.style.height = btn.offsetHeight + 'px';
+        }
+        function select(btn) {
+          var id = btn.getAttribute('data-tab');
+          btns.forEach(function (b) {
+            var on = b === btn;
+            b.classList.toggle('is-active', on);
+            b.setAttribute('aria-selected', on ? 'true' : 'false');
+          });
+          panels.forEach(function (p) {
+            var on = p.getAttribute('data-panel') === id;
+            p.classList.toggle('is-active', on);
+            p.hidden = !on;
+          });
+          movePill(btn);
+        }
+        // pestaña inicial según el hash de la URL (#d1 / #d2 / #d3); por defecto, la activa
+        var wanted = (location.hash || '').replace('#', '');
+        var initial = btns.filter(function (b) { return b.getAttribute('data-tab') === wanted; })[0] || activeBtn();
+        select(initial);
+        // activar la transición un frame después para que no aparezca deslizándose al cargar
+        requestAnimationFrame(function () {
+          pill.style.transition = 'left .38s cubic-bezier(.22,1,.36,1), width .38s cubic-bezier(.22,1,.36,1), top .38s, height .38s';
+        });
+        window.addEventListener('resize', function () { movePill(activeBtn()); });
+        // reaccionar si el hash cambia sin recargar (p. ej. navegación interna)
+        window.addEventListener('hashchange', function () {
+          var w = (location.hash || '').replace('#', '');
+          var b = btns.filter(function (x) { return x.getAttribute('data-tab') === w; })[0];
+          if (b && !b.classList.contains('is-active')) select(b);
+        });
+        btns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            if (!btn.classList.contains('is-active')) select(btn);
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
